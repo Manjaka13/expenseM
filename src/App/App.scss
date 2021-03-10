@@ -1,0 +1,187 @@
+/*
+	Some global styling
+*/
+@import "../config";
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+html, body, #root, .app {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: rgb(35, 35, 35);
+}
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+	transition: all 0.2s ease-in-out;
+	&:hover {
+		text-decoration: none;
+	}
+}
+.app-title {
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	color: rgb(59, 67, 81);
+}
+.app-title-xlg {
+    font-size: 50pt;
+}
+.app-title-lg {
+    font-size: 40pt;
+}
+.app-title-md {
+    font-size: 30pt;
+}
+.app-title-sm {
+    font-size: 25pt;
+}
+.app-title-xsm {
+    font-size: 20pt;
+}
+@media only screen and (max-width: $app-screen-lg) {
+	.app-title-xlg {
+    	font-size: 40pt;
+	}
+	.app-title-lg {
+	    font-size: 30pt;
+	}
+	.app-title-md {
+	    font-size: 25pt;
+	}
+	.app-title-sm {
+	    font-size: 22pt;
+	}
+	.app-title-xsm {
+	    font-size: 18pt;
+	}
+}
+@media only screen and (max-width: $app-screen-md) {
+	.app-title-xlg {
+    	font-size: 30pt;
+	}
+	.app-title-lg {
+	    font-size: 25pt;
+	}
+	.app-title-md {
+	    font-size: 22pt;
+	}
+	.app-title-sm {
+	    font-size: 18pt;
+	}
+	.app-title-xsm {
+	    font-size: 15pt;
+	}
+}
+@media only screen and (max-width: $app-screen-xsm) {
+	.app-title-xlg {
+    	font-size: 20pt;
+	}
+	.app-title-lg {
+	    font-size: 18pt;
+	}
+	.app-title-md {
+	    font-size: 16pt;
+	}
+	.app-title-sm {
+	    font-size: 15pt;
+	}
+	.app-title-xsm {
+	    font-size: 13pt;
+	}
+}
+.app-text-colored {
+	color: rgb(200, 200, 200);
+}
+.app-text {
+	text-align: justify;
+	font-size: 16pt;
+	padding: 0;
+	margin: 0;
+}
+@media only screen and (max-width: $app-screen-lg) {
+	.app-text {
+		font-size: 15pt;
+	}
+}
+@media only screen and (max-width: $app-screen-md) {
+	.app-text {
+		font-size: 13pt;
+	}
+}
+@media only screen and (max-width: $app-screen-sm) {
+	.app-text {
+		font-size: 12pt;
+	}
+}
+@media only screen and (max-width: $app-screen-xsm) {
+	.app-text {
+		font-size: 11pt;
+	}
+}
+section {
+	display: block;
+	width: 80%;
+	margin: auto;
+	@media only screen and (max-width: $app-screen-sm) {
+		width: 90%;
+	}
+	@media only screen and (max-width: $app-screen-xsm) {
+		width: 93%;
+	}
+	.title1 {
+		text-align: left;
+		padding-top: 50px;
+		padding-bottom: 20px;
+		color: rgb(221, 0, 49);
+		text-shadow: 0px 1px 2px black;
+	}
+	.separator {
+		display: block;
+		width: 35%;
+		height: 3px;
+		background: rgb(221, 0, 49);
+		box-shadow: 0px 1px 2px black;
+	}
+	.title2 {
+		padding-top: 20px;
+		color: white;
+		text-align: left;
+		text-shadow: 0px 1px 2px black;
+	}
+	.text {
+		padding-top: 20px;
+		color: rgb(200, 200, 200);
+	}
+	.signature {
+		padding-top: 20px;
+		color: white;
+		text-shadow: 0px 1px 2px black;
+		padding-bottom: 50px;
+	}
+}
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    .window {
+        width: 90%;
+        height: 80%;
+        background: rgb(40, 40, 40);
+        box-shadow: 0px 0px 10px rgb(10, 10, 10);
+        overflow: hidden;
+        border-radius: 20px;
+    }
+}
