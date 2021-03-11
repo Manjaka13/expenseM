@@ -1,0 +1,12 @@
+{
+  "sections": [
+      {
+          "icon": "money-check-alt",
+          "name": "Dépenses"
+      },
+      {
+          "icon": "plus-circle",
+          "name": "Ajout dépense"
+      }
+  ]
+}

@@ -1,0 +1,12 @@
+@import "../config";
+
+.list-section {
+    display: flex;
+    height: 100px;
+    background: rgb(45, 45, 45);
+    box-shadow: 0px 0px 1px black;
+    overflow: hidden;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}

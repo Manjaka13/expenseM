@@ -1,0 +1,42 @@
+@import "../config";
+
+.section-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $app-color-primary;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin-left: 10px;
+    margin-right: 10px;
+    &:hover {
+        color: white;
+        text-shadow: 0px 1px 2px black;
+    }
+    &:active {
+        text-shadow: 0px 0px 5px white;
+    }
+    .icon {
+        font-size: 30pt;
+        pointer-events: none;
+    }
+    .name {
+        margin-top: 10px;
+        pointer-events: none;
+    }
+    .underline {
+        width: 0;
+        height: 4px;
+        background: $app-color-secondary;
+        margin-top: 10px;
+        box-shadow: 0px 1px 2px black;
+        transition: width 0.2s ease-in-out;
+    }
+}
+
+.section-item--active {
+    color: $app-color-secondary;
+    .underline {
+        width: 100%;
+    }
+}
