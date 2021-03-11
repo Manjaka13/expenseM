@@ -1,0 +1,94 @@
+@import "../config";
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    .user-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        overflow: hidden;
+        background: rgb(100, 100, 100);
+        .icon {
+            font-size: 50pt;
+            color: white;
+        }
+    }
+    .title {
+        color: white;
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        .input-group {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            /* box-shadow: 0px 0px 2px orange; */
+            overflow: hidden;
+            border-radius: 30px;
+            margin-bottom: 30px;
+            background: rgb(40px, 40px, 40px);
+            transition: all 0.2s ease-in-out;
+            &:hover {
+                box-shadow: 0px 0px 10px black;
+            }
+            .icon-box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-left: 20px;
+                padding-right: 20px;
+                .icon {
+                    color: $app-color-tertiary;
+                    font-size: 25pt;
+                }
+            }
+            .input {
+                padding: 10px 20px 10px 20px;
+                width: 600px;
+                background: rgb(50, 50, 50);
+                border: none;
+                color: white;
+            }
+        }
+        .submit {
+            border: none;
+            padding: 10px 20px 10px 20px;
+            color: $app-color-tertiary;
+            border-radius: 5px;
+            background: rgb(100, 100, 100);
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            &:hover {
+                color: white;
+                background: rgb(150, 150, 150);
+                text-shadow: 0px 1px 2px black;
+            }
+            &:active {
+                box-shadow: 0px 0px 20px white;
+            }
+        }
+        .submit--disabled {
+            pointer-events: none;
+            color: grey;
+            background: rgb(70, 70, 70);
+        }
+    }
+}

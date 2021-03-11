@@ -7,6 +7,14 @@
       {
           "icon": "plus-circle",
           "name": "Ajout dépense"
+      },
+      {
+          "icon": "wallet",
+          "name": "Vue globale"
+      },
+      {
+          "icon": "search",
+          "name": "Recherche"
       }
   ]
 }
